@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <WorkGiverDef>
+    <defName>DoBillsNecromancy</defName>
+    <label>work at necromancer's table</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Doctor</workType>
+    <priorityInType>90</priorityInType>
+    <fixedBillGiverDefs>
+      <li>NecromancersTable</li>
+    </fixedBillGiverDefs>
+    <verb>reanimate</verb>
+    <gerund>reanimating at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+</Defs>
