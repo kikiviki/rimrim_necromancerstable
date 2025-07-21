@@ -1,0 +1,15 @@
+E:\Dropbox\rimrimmod\NecromancersTable\Source\obj\Debug\NecromancersTable.csproj.AssemblyReference.cache
+E:\Dropbox\rimrimmod\NecromancersTable\Source\obj\Debug\NecromancersTable.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dropbox\rimrimmod\NecromancersTable\Source\obj\Debug\NecromancersTable.csproj.CoreCompileInputs.cache
+E:\Dropbox\rimrimmod\NecromancersTable\Assemblies\NecromancersTable.dll
+E:\Dropbox\rimrimmod\NecromancersTable\Source\obj\Debug\NecromancersTable.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\NecromancersTable\Assemblies\NecromancersTable.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\NecromancersTable\Source\obj\Debug\NecromancersTable.csproj.AssemblyReference.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\NecromancersTable\Source\obj\Debug\NecromancersTable.GeneratedMSBuildEditorConfig.editorconfig
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\NecromancersTable\Source\obj\Debug\NecromancersTable.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\NecromancersTable\Source\obj\Debug\NecromancersTable.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\YouArentDoneYet\Assemblies\NecromancersTable.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\YouArentDoneYet\Source\obj\Debug\NecromancersTable.csproj.AssemblyReference.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\YouArentDoneYet\Source\obj\Debug\NecromancersTable.GeneratedMSBuildEditorConfig.editorconfig
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\YouArentDoneYet\Source\obj\Debug\NecromancersTable.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\YouArentDoneYet\Source\obj\Debug\NecromancersTable.dll

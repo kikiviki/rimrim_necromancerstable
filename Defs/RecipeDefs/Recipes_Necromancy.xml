@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RecipeDef>
+    <defName>CobbleTogetherRevenant</defName>
+    <label>reanimate corpse</label>
+    <description>Reanimate a corpse into an undead servant. The fresher the corpse, the longer it will last before decaying. Fresh corpses last up to 45 days, while heavily rotted corpses last only 3 days.</description>
+    <jobString>Reanimating corpse.</jobString>
+    <workAmount>8400</workAmount> <!-- 4 in-game hours -->
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <workSkill>Medicine</workSkill>
+    <effectWorking>Surgery</effectWorking>
+    <soundWorking>Recipe_Surgery</soundWorking>
+    <workerClass>NecromancersTable.Recipe_CobbleRevenant</workerClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Corpses</li>
+      </categories>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <products>
+    </products>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>NecromancersTable</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <!-- Alternative recipe using herbal medicine instead of neutroamine -->
+  <RecipeDef>
+    <defName>CobbleTogetherRevenantHerbal</defName>
+    <label>reanimate corpse (herbal)</label>
+    <description>Reanimate a corpse into an undead servant using herbal medicine. The fresher the corpse, the longer it will last before decaying. Fresh corpses last up to 45 days, while heavily rotted corpses last only 3 days.</description>
+    <jobString>Reanimating corpse.</jobString>
+    <workAmount>16400</workAmount> <!-- 4 in-game hours -->
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <workSkill>Medicine</workSkill>
+    <effectWorking>Surgery</effectWorking>
+    <soundWorking>Recipe_Surgery</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineHerbal</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Corpses</li>
+      </categories>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <products>
+    </products>
+    <skillRequirements>
+      <Medicine>3</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>NecromancersTable</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>

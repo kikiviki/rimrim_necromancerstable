@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "k6fpPhfScYBhE6LNhSDqA+Wv/szuEsai8SCx99hbjTQtxl8mqm+gnf1s67uW4s6+xesZGS311HVMY/2VwXGKYw==",
+  "success": true,
+  "projectFilePath": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\YouArentDoneYet\\Source\\NecromancersTable.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kiki\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Kiki\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net48\\1.0.3\\microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

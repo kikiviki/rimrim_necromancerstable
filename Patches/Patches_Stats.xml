@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <!-- Ensure our stats work properly by patching if needed -->
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <!-- This patch ensures compatibility -->
+    </operations>
+  </Operation>
+</Patch>

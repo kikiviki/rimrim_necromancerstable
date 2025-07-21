@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Necromancer's Table</name>
+  <author>Adakos/FrankLloydWrong</author>
+  <packageId>Adakos.NecromancersTable</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Death is merely the beginning of service.
+
+Adds a necromancer's table that allows colonists with medical skill to reanimate corpses into temporary undead colonists. These skeletal servants require no food, rest, or comfort but slowly decay over time.
+
+Features:
+- Cobble together simple revenants from single corpses
+- Undead colonists require no food, sleep, or recreation
+- Reanimated colonists slowly decay over time 
+- Retains the skills of the original corpse(s)</description>
+  <modDependencies>
+    <li>
+      <packageId>Ludeon.RimWorld</packageId>
+      <displayName>Core</displayName>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+  </loadAfter>
+</ModMetaData>
