@@ -417,8 +417,19 @@ namespace NecromancersTable
                 // Copy appearance details to make undead look like original
                 if (newPawn.story != null && innerPawn.story != null)
                 {
-                    // Copy hair (definition only - color might not be accessible in 1.6)
+                    // Copy hair (definition)
                     newPawn.story.hairDef = innerPawn.story.hairDef;
+                    
+                    // Copy hair color (it's in story, not style!)
+                    try
+                    {
+                        newPawn.story.HairColor = innerPawn.story.HairColor;
+                        Log.Message("Copied hair color from story system");
+                    }
+                    catch (Exception e)
+                    {
+                        Log.Warning("Could not copy hair color from story: " + e.Message);
+                    }
                     
                     // Copy head shape
                     newPawn.story.headType = innerPawn.story.headType;
@@ -443,10 +454,10 @@ namespace NecromancersTable
                         newPawn.story.skinColorOverride = new Color(0.7f, 0.7f, 0.85f); // Pale blue-grey
                     }
                     
-                    Log.Message("Copied appearance details (hair style, head, body, skin)");
+                    Log.Message("Copied appearance details (hair style, hair color, head, body, skin)");
                 }
                 
-                // Copy facial hair if available (style system)
+                // Copy style details (tattoos, facial hair) - using correct property names
                 if (newPawn.style != null && innerPawn.style != null)
                 {
                     // Copy facial hair if it exists
@@ -455,10 +466,38 @@ namespace NecromancersTable
                         newPawn.style.beardDef = innerPawn.style.beardDef;
                         Log.Message("Copied facial hair from style system");
                     }
+                    
+                    // Copy face tattoo using correct property name (FaceTattoo, not faceTattoo)
+                    try
+                    {
+                        if (innerPawn.style.FaceTattoo != null)
+                        {
+                            newPawn.style.FaceTattoo = innerPawn.style.FaceTattoo;
+                            Log.Message("Copied face tattoo: " + innerPawn.style.FaceTattoo.label);
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        Log.Warning("Could not copy face tattoo: " + e.Message);
+                    }
+                    
+                    // Copy body tattoo using correct property name (BodyTattoo, not bodyTattoo)
+                    try
+                    {
+                        if (innerPawn.style.BodyTattoo != null)
+                        {
+                            newPawn.style.BodyTattoo = innerPawn.style.BodyTattoo;
+                            Log.Message("Copied body tattoo: " + innerPawn.style.BodyTattoo.label);
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        Log.Warning("Could not copy body tattoo: " + e.Message);
+                    }
                 }
                 else
                 {
-                    Log.Message("Style system not available - skipping facial hair");
+                    Log.Message("Style system not available - skipping facial hair and tattoos");
                 }
                 
                 // Copy skills
