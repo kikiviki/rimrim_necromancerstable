@@ -4,7 +4,7 @@
     <defName>UndeadDecay</defName>
     <label>undead decay</label>
     <description>This creature is undead and slowly decaying. When decay reaches maximum, the creature will collapse.</description>
-    <hediffClass>NecromancersTable.Hediff_UndeadDecay</hediffClass>
+    <hediffClass>RimReanimated.Hediff_UndeadDecay</hediffClass>
     <defaultLabelColor>(0.7, 0.7, 0.7)</defaultLabelColor>
     <isBad>false</isBad>
     <everCurableByItem>false</everCurableByItem>
@@ -74,7 +74,7 @@
     <defName>UndeadTraits</defName>
     <label>undead</label>
     <description>This creature is undead. It feels no pain, has no mood, and requires no food, rest, or comfort. It is resistant to environmental hazards including toxins and the vacuum of space.</description>
-    <hediffClass>NecromancersTable.Hediff_Undead</hediffClass>
+    <hediffClass>RimReanimated.Hediff_Undead</hediffClass>
     <defaultLabelColor>(0.5, 0.5, 0.8)</defaultLabelColor>
     <isBad>false</isBad>
     <everCurableByItem>false</everCurableByItem>
@@ -145,7 +145,7 @@
     <defName>CorpseRotPenalty</defName>
     <label>corpse reuse penalty</label>
     <description>This corpse has been reanimated before, making it less suitable for future necromancy.</description>
-    <hediffClass>NecromancersTable.Hediff_CorpseRotPenalty</hediffClass>
+    <hediffClass>RimReanimated.Hediff_CorpseRotPenalty</hediffClass>
     <defaultLabelColor>(0.4, 0.3, 0.3)</defaultLabelColor>
     <isBad>true</isBad>
     <everCurableByItem>false</everCurableByItem>

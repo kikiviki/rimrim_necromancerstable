@@ -1,0 +1,5 @@
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\RimReanimated\Assemblies\RimReanimated.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\RimReanimated\Source\obj\Debug\RimReanimated.csproj.AssemblyReference.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\RimReanimated\Source\obj\Debug\RimReanimated.GeneratedMSBuildEditorConfig.editorconfig
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\RimReanimated\Source\obj\Debug\RimReanimated.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\RimReanimated\Source\obj\Debug\RimReanimated.dll

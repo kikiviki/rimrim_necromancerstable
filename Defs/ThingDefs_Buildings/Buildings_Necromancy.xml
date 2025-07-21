@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef ParentName="BenchBase">
-    <defName>NecromancersTable</defName>
+    <defName>RimReanimated</defName>
     <label>necromancer's table</label>
     <description>A dark altar where skilled medics can reanimate corpses into temporary undead servants. The fresher the corpse, the longer the servant will last before decaying.</description>
     <thingClass>Building_WorkTable</thingClass>

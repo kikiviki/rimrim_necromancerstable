@@ -7,7 +7,7 @@
     <workType>Doctor</workType>
     <priorityInType>90</priorityInType>
     <fixedBillGiverDefs>
-      <li>NecromancersTable</li>
+      <li>RimReanimated</li>
     </fixedBillGiverDefs>
     <verb>reanimate</verb>
     <gerund>reanimating at</gerund>

@@ -420,11 +420,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\YouArentDoneYet\\Source\\NecromancersTable.csproj",
-      "projectName": "NecromancersTable",
-      "projectPath": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\YouArentDoneYet\\Source\\NecromancersTable.csproj",
+      "projectUniqueName": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\RimReanimated\\Source\\RimReanimated.csproj",
+      "projectName": "RimReanimated",
+      "projectPath": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\RimReanimated\\Source\\RimReanimated.csproj",
       "packagesPath": "C:\\Users\\Kiki\\.nuget\\packages\\",
-      "outputPath": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\YouArentDoneYet\\Source\\obj\\",
+      "outputPath": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\RimReanimated\\Source\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kiki\\AppData\\Roaming\\NuGet\\NuGet.Config"

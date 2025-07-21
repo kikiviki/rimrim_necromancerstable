@@ -6,14 +6,14 @@ using Verse;
 using Verse.AI;
 using UnityEngine;
 
-namespace NecromancersTable
+namespace RimReanimated
 {
     [StaticConstructorOnStartup]
     public static class ModInit
     {
         static ModInit()
         {
-            Log.Message("NecromancersTable mod initializing...");
+            Log.Message("RimReanimated mod initializing...");
             
             // Verify our recipe worker is registered
             var recipe = DefDatabase<RecipeDef>.GetNamed("CobbleTogetherRevenant", false);
@@ -28,9 +28,9 @@ namespace NecromancersTable
         }
     }
 
-    public class NecromancersTableMod : Mod
+    public class RimReanimatedMod : Mod
     {
-        public NecromancersTableMod(ModContentPack content) : base(content)
+        public RimReanimatedMod(ModContentPack content) : base(content)
         {
         }
     }

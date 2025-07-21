@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Necromancer's Table</name>
+  <name>Rim-Reanimated</name>
   <author>Adakos/FrankLloydWrong</author>
-  <packageId>Adakos.NecromancersTable</packageId>
+  <packageId>Adakos.RimReanimated</packageId>
   <supportedVersions>
     <li>1.6</li>
   </supportedVersions>

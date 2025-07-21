@@ -10,7 +10,7 @@
     <workSkill>Medicine</workSkill>
     <effectWorking>Surgery</effectWorking>
     <soundWorking>Recipe_Surgery</soundWorking>
-    <workerClass>NecromancersTable.Recipe_CobbleRevenant</workerClass>
+    <workerClass>RimReanimated.Recipe_CobbleRevenant</workerClass>
     <ingredients>
       <li>
         <filter>
@@ -44,7 +44,7 @@
       <Medicine>5</Medicine>
     </skillRequirements>
     <recipeUsers>
-      <li>NecromancersTable</li>
+      <li>RimReanimated</li>
     </recipeUsers>
   </RecipeDef>
 
@@ -91,7 +91,7 @@
       <Medicine>3</Medicine>
     </skillRequirements>
     <recipeUsers>
-      <li>NecromancersTable</li>
+      <li>RimReanimated</li>
     </recipeUsers>
   </RecipeDef>
 </Defs>
