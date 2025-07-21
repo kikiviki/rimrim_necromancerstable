@@ -838,21 +838,38 @@ namespace NecromancersTable
 
         public override bool AvailableOnNow(Thing thing, BodyPartRecord part = null)
         {
-            // Filter corpses by type and freshness
+            // Filter corpses by type and freshness - ONLY allow humanlike corpses
             if (thing is Corpse corpse)
             {
                 var pawn = corpse.InnerPawn;
                 
-                // Check if it's a colonist-type (not mechanoid or animal)
-                // Anomalous creatures are typically also animals or have specific defs
-                if (pawn.RaceProps.IsMechanoid || pawn.RaceProps.Animal || pawn.RaceProps.Humanlike == false)
+                // STRICT humanlike-only check - reject everything else
+                if (!pawn.RaceProps.Humanlike)
                 {
+                    Log.Message($"Rejecting corpse: {pawn.def.defName} - not humanlike");
                     return false;
                 }
                 
-                // Additional check for specific creature types if needed
-                if (pawn.def.defName.Contains("Anomaly") || pawn.def.defName.Contains("Entity"))
+                // Double-check: explicitly reject mechanoids, animals, and entities
+                if (pawn.RaceProps.IsMechanoid)
                 {
+                    Log.Message($"Rejecting corpse: {pawn.def.defName} - is mechanoid");
+                    return false;
+                }
+                
+                if (pawn.RaceProps.Animal)
+                {
+                    Log.Message($"Rejecting corpse: {pawn.def.defName} - is animal");
+                    return false;
+                }
+                
+                // Additional safety check for modded entity types
+                if (pawn.def.defName.Contains("Mechanoid") || 
+                    pawn.def.defName.Contains("Entity") || 
+                    pawn.def.defName.Contains("Drone") ||
+                    pawn.def.defName.Contains("Anomaly"))
+                {
+                    Log.Message($"Rejecting corpse: {pawn.def.defName} - detected entity/mechanoid/anomaly in name");
                     return false;
                 }
                 
@@ -876,7 +893,15 @@ namespace NecromancersTable
                 }
                 
                 float freshness = 1f - rotProgress;
-                return freshness >= 0.15f;
+                bool freshEnough = freshness >= 0.15f;
+                
+                if (!freshEnough)
+                {
+                    Log.Message($"Rejecting corpse: {pawn.def.defName} - too rotted (freshness: {freshness:0.00})");
+                }
+                
+                Log.Message($"Corpse check: {pawn.def.defName} - Humanlike: {pawn.RaceProps.Humanlike}, Fresh enough: {freshEnough}");
+                return freshEnough;
             }
             
             return base.AvailableOnNow(thing, part);

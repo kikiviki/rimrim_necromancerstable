@@ -73,7 +73,7 @@
   <HediffDef>
     <defName>UndeadTraits</defName>
     <label>undead</label>
-    <description>This creature is undead. It feels no pain, has no mood, and requires no food, rest, or comfort.</description>
+    <description>This creature is undead. It feels no pain, has no mood, and requires no food, rest, or comfort. It is resistant to environmental hazards including toxins and the vacuum of space.</description>
     <hediffClass>NecromancersTable.Hediff_Undead</hediffClass>
     <defaultLabelColor>(0.5, 0.5, 0.8)</defaultLabelColor>
     <isBad>false</isBad>
@@ -90,8 +90,10 @@
           <MentalBreakThreshold>-999</MentalBreakThreshold>
           <ToxicResistance>1.0</ToxicResistance>
           <ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+          <VacuumResistance>0.9</VacuumResistance>
           <ImmunityGainSpeed>10.0</ImmunityGainSpeed>
         </statOffsets>
+
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
@@ -113,35 +115,27 @@
     <chronic>true</chronic>
     <stages>
       <li>
-        <label>barely noticeable decay</label>
-        <minSeverity>0.03</minSeverity>
-        <capMods>
-          <li><capacity>Moving</capacity><offset>-0.02</offset></li>
-          <li><capacity>Manipulation</capacity><offset>-0.02</offset></li>
-        </capMods>
-      </li>
-      <li>
-        <label>slight corpse rot penalty</label>
-        <minSeverity>0.06</minSeverity>
+        <label>minor decay traces</label>
+        <minSeverity>0.01</minSeverity>
         <capMods>
           <li><capacity>Moving</capacity><offset>-0.05</offset></li>
           <li><capacity>Manipulation</capacity><offset>-0.05</offset></li>
         </capMods>
       </li>
       <li>
-        <label>minor corpse rot penalty</label>
-        <minSeverity>0.12</minSeverity>
+        <label>slight corpse rot penalty</label>
+        <minSeverity>0.04</minSeverity>
         <capMods>
-          <li><capacity>Moving</capacity><offset>-0.10</offset></li>
-          <li><capacity>Manipulation</capacity><offset>-0.10</offset></li>
+          <li><capacity>Moving</capacity><offset>-0.09</offset></li>
+          <li><capacity>Manipulation</capacity><offset>-0.09</offset></li>
         </capMods>
       </li>
       <li>
-        <label>moderate corpse rot penalty</label>
-        <minSeverity>0.20</minSeverity>
+        <label>minor corpse rot penalty</label>
+        <minSeverity>0.08</minSeverity>
         <capMods>
-          <li><capacity>Moving</capacity><offset>-0.20</offset></li>
-          <li><capacity>Manipulation</capacity><offset>-0.20</offset></li>
+          <li><capacity>Moving</capacity><offset>-0.15</offset></li>
+          <li><capacity>Manipulation</capacity><offset>-0.15</offset></li>
         </capMods>
       </li>
     </stages>
