@@ -59,6 +59,7 @@
     <workSkill>Medicine</workSkill>
     <effectWorking>Surgery</effectWorking>
     <soundWorking>Recipe_Surgery</soundWorking>
+	<workerClass>RimReanimated.Recipe_CobbleRevenant</workerClass>
     <ingredients>
       <li>
         <filter>
