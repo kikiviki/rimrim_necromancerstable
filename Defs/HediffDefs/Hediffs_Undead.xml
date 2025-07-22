@@ -48,11 +48,11 @@
         <capMods>
           <li>
             <capacity>Moving</capacity>
-            <offset>-0.25</offset>
+            <offset>-0.20</offset>
           </li>
           <li>
             <capacity>Manipulation</capacity>
-            <offset>-0.25</offset>
+            <offset>-0.20</offset>
           </li>
         </capMods>
       </li>
@@ -92,6 +92,7 @@
           <ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
           <VacuumResistance>0.9</VacuumResistance>
           <ImmunityGainSpeed>10.0</ImmunityGainSpeed>
+          <InjuryHealingFactor>5.0</InjuryHealingFactor>
         </statOffsets>
 
         <capMods>
